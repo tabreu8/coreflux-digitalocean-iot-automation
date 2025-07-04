@@ -1,0 +1,8 @@
+services:
+  coreflux:
+    image: coreflux/coreflux-mqtt-broker-t:1.6.3
+    ports:
+      - "1883:1883"  # MQTT default port
+      - "1884:1884"  # MQTT TLS port
+      - "5000:5000"  # MQTT WebSocket port
+      - "443:443"    # MQTT WebSocket TLS port
